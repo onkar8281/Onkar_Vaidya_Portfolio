@@ -68,7 +68,7 @@ const profile = {
             this.hardWorker &&
             this.problemSolver &&
             this.skills.length >= 5 &&
-            this.yearsOfExperience >= 3
+            this.internshipExperience >= 0.5
         );
     }
 };
@@ -190,9 +190,8 @@ const profile = {
                   <SparklesText text="Hello" />
                   <span className="relative inline-block">
                     I&apos;m
-                    <span className="typing-effect gradient-text">
-                      {" "}
-                      Onkar Vaidya
+                    <span className="gradient-text">
+                    {" "}Onkar Vaidya
                     </span>
                   </span>
                 </h1>
