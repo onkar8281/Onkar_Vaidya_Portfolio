@@ -3,71 +3,73 @@ import { useTransform, motion, useScroll } from "framer-motion";
 import { useRef, useEffect } from "react";
 import PropTypes from "prop-types";
 
+import UserTrackerImg from "@/assets/images/usertracker.png";
+import AlarmAppImg from "@/assets/images/AlarmApp.png";
+import EcommerceImg from "@/assets/images/EcommerceApp.png";
+import AGBImg from "@/assets/images/AGB.png";
+import CorporateImg from "@/assets/images/CorporateGifting.png";
+import EmailImg from "@/assets/images/Email.webp";
+
 const projects = [
   {
     title: "UserTracker – Employee Attendance & Location Tracker (iOS)",
     description:
       "Built a real-time employee attendance and location tracking system with secure user/admin roles. Implemented live GPS tracking, route playback, and automatic location logging using MapKit and Firebase.",
-    src: "src/assets/images/usertracker.png",
-    link: "src/assets/images/usertracker.png",
+    src: UserTrackerImg,
+    link: UserTrackerImg,
     color: "#5196fd",
     githubLink: "https://github.com/onkar8281/UserTracker",
-    // liveLink: "",
   },
 
   {
     title: "Alarm App – iOS Clock Application",
     description:
       "Developed a full-featured iOS clock application including World Clock, Alarm, Stopwatch, and Timer modules. Supports multi-alarm management, lap stopwatch tracking, and real-time countdown timers.",
-    src: "src/assets/images/AlarmApp.png",
-    link: "src/assets/images/AlarmApp.png",
+    src: AlarmAppImg,
+    link: AlarmAppImg,
     color: "#8f89ff",
     githubLink: "https://github.com/onkar8281/Alarm-App-Final",
-    // liveLink: "",
   },
 
   {
     title: "Interior Design Shopping App (iOS)",
     description:
       "Created a modern interior furniture shopping iOS application with product catalog, wishlist, shopping cart, and checkout system. Built with SwiftUI following Apple Human Interface Guidelines.",
-    src: "src/assets/images/EcommerceApp.png",
-    link: "src/assets/images/EcommerceApp.png",
+    src: EcommerceImg,
+    link: EcommerceImg,
     color: "#3ecf8e",
     githubLink: "https://github.com/onkar8281/InteriorApp",
-    // liveLink: "",
   },
 
   {
     title: "AGB Automation – Industrial Automation Website",
     description:
       "Developed a responsive industrial automation company website showcasing services, solutions, and products. Built using modern frontend technologies with a clean professional UI.",
-    src: "src/assets/images/AGBAutomation.png",
-    link: "src/assets/images/AGB.png",
+    src: AGBImg,
+    link: AGBImg,
     color: "#ff6b6b",
-    githubLink: "",
-    liveLink: "https://cityofbaytown.org/?d=agbautomation.com&a=2143526812&s=a8b2fc9817439bdd4dc4f4b25b8d0c3d09e4c351bc2a0e8d2c8f4e7d97077276",
+    liveLink:
+      "https://cityofbaytown.org/?d=agbautomation.com&a=2143526812&s=a8b2fc9817439bdd4dc4f4b25b8d0c3d09e4c351bc2a0e8d2c8f4e7d97077276",
   },
 
   {
-  title: "Corporate Gifting Management System (Web)",
-  description:
-    "Developed a web-based corporate gifting management system to streamline bulk gift ordering, inventory tracking, and client management. The platform allows businesses to manage corporate gift catalogs, track orders, and automate gifting workflows efficiently.",
-  src: "src/assets/images/CorporateGifting.png",
-  link: "src/assets/images/CorporateGifting.png",
-  color: "#22c55e",
-  liveLink: "https://gifttingadmin.netlify.app/",
-},
+    title: "Corporate Gifting Management System (Web)",
+    description:
+      "Developed a web-based corporate gifting management system to streamline bulk gift ordering, inventory tracking, and client management. The platform allows businesses to manage corporate gift catalogs, track orders, and automate gifting workflows efficiently.",
+    src: CorporateImg,
+    link: CorporateImg,
+    color: "#22c55e",
+    liveLink: "https://gifttingadmin.netlify.app/",
+  },
 
   {
-  title: "Email Tracking System (Web)",
-  description:
-    "Developed a web-based email tracking system that allows users to monitor email opens, delivery status, and user engagement. The system tracks email activity in real-time and provides analytics to improve communication and campaign performance.",
-  src: "src/assets/images/EmailTracking.png",
-  link: "src/assets/images/Email.webp",
-  color: "#5196fd",
-  githubLink: "",
-  // liveLink: "",
-},
+    title: "Email Tracking System (Web)",
+    description:
+      "Developed a web-based email tracking system that allows users to monitor email opens, delivery status, and user engagement. The system tracks email activity in real-time and provides analytics to improve communication and campaign performance.",
+    src: EmailImg,
+    link: EmailImg,
+    color: "#5196fd",
+  },
 ];
 
 export default function Projects() {
