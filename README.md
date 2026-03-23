@@ -15,12 +15,6 @@
 
 ---
 
-## 📸 Preview
-
-![Portfolio Preview](src/assets/images/Portfolio.png)
-
----
-
 ## 📌 About This Project
 
 This is my personal **developer portfolio website** designed to present my work, technical skills, and professional journey.
